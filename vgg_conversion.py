@@ -1,15 +1,13 @@
 import os
-import requests
-from PIL import Image
 from io import BytesIO
 
 import equinox as eqx
-
 import jax
-import jax.random as jr
 import jax.numpy as jnp
-
+import jax.random as jr
+import requests
 import torchvision.models as models
+from PIL import Image
 
 
 class VGGBlock(eqx.Module):
